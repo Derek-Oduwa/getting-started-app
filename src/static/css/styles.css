@@ -1,9 +1,58 @@
 body {
     background-color: #f4f4f4;
     margin-top: 50px;
-    font-family: 'Lato';
+    font-family: Lato, sans-serif;
+    text-align: center;
 }
 
+.calendar {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+#currentMonth {
+    font-size: 1.5rem;
+}
+
+#calendarBody td {
+    text-align: center;
+    cursor: pointer;
+}
+
+#calendarBody td:hover {
+    background-color: #007BFF;
+    color: #fff;
+}
 .item {
     background-color: white;
     padding: 15px;
