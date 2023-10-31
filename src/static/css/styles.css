@@ -5,6 +5,7 @@ body {
     text-align: center;
 }
 
+/* Calendar Styles */
 .calendar {
     max-width: 600px;
     margin: 0 auto;
@@ -14,14 +15,14 @@ body {
     background-color: #f9f9f9;
 }
 
-.header {
+.calendar .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
 }
 
-button {
+.calendar button {
     background-color: #007BFF;
     color: #fff;
     border: none;
@@ -30,29 +31,31 @@ button {
     cursor: pointer;
 }
 
-table {
+.calendar table {
     width: 100%;
     border-collapse: collapse;
 }
 
-table th, table td {
+.calendar table th, .calendar table td {
     border: 1px solid #ccc;
     padding: 10px;
 }
 
-#currentMonth {
+.calendar #currentMonth {
     font-size: 1.5rem;
 }
 
-#calendarBody td {
+.calendar #calendarBody td {
     text-align: center;
     cursor: pointer;
 }
 
-#calendarBody td:hover {
+.calendar #calendarBody td:hover {
     background-color: #007BFF;
     color: #fff;
 }
+
+/* To-Do App Styles */
 .item {
     background-color: white;
     padding: 15px;
