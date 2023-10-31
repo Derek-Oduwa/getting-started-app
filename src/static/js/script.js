@@ -12,6 +12,9 @@ document.addEventListener("DOMContentLoaded", function () {
         "January", "February", "March", "April", "May", "June",
         "July", "August", "September", "October", "November", "December"
     ];
+    function renderCalendar(){
+        
+    }
 
     function generateCalendar() {
         currentMonthElement.textContent = months[currentMonth] + " " + currentYear;
@@ -48,6 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
             currentYear--;
         }
         generateCalendar();
+        renderCalendar();
     });
 
     nextMonthButton.addEventListener("click", function () {
@@ -58,5 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
             currentYear++;
         }
         generateCalendar();
+         renderCalendar();
     });
+    document.addEventListener("DOMContentLoaded", renderCalendar);
 });
