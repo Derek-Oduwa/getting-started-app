@@ -1,0 +1,9 @@
+version: '3'
+services:
+  mysql:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: B29aC43bd
+      MYSQL_DATABASE: C21371446_mysql
+    ports:
+      - "32769:3306"
